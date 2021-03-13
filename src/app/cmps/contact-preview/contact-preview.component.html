@@ -1,7 +1,0 @@
-<div class="contact-preview"  [routerLink]="['/contact',contact._id]">
-    <img *ngIf="!isLoad" src="https://i.stack.imgur.com/sEKwt.gif" alt="">
-    <img  (load)="load()" class="imgUser" src="https://robohash.org/{{contact.name}}?set=set5" />
-   <span>{{contact.name}}</span>
-   
-  
-</div>
