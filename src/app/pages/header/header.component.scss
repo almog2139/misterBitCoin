@@ -1,0 +1,17 @@
+.header{
+    border-bottom: 3px solid grey;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        list-style-type: none;
+        li{
+            img{
+                width: 70px;
+            }
+        }
+    }
+    .active-nav{
+        box-shadow: 1px -17px 48px 8px #686868;
+    }
+}

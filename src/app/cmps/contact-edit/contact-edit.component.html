@@ -1,0 +1,23 @@
+<section class="contact-edit">
+    <img  [routerLink]="['/contact']" class="icon-back" src="../../../assets/icons/back.png" />
+    <img src=" ../../../assets/icons/delete.png" *ngIf="contact.name" class="icon" (click)="onRemoveContact($event)"/>
+    <img class="imgContact" *ngIf="contact.name&&contact.email&&contact.phone" src="https://robohash.org/{{contact.name}}?set=set5 "/>
+    <img class="imgContact" *ngIf="!contact.name&&!contact.email&&!contact.phone" src="../../../assets/icons/contact.png" />
+    <h4>{{msg}}</h4>
+    <form  (submit)="$event.preventDefault();onSubmitForm()">
+        <div>
+            <label for="">Name:</label>
+            <input type="text" name="name" [(ngModel)]="contact.name" />
+        </div>
+        <div>
+            <label for="">Email:</label>
+            <input type="email" name="email" [(ngModel)]="contact.email" />
+        </div>
+        <div>
+            <label for="">Phone:</label>
+            <input type="phone" name="phone" [(ngModel)]="contact.phone" />
+        </div>
+        <button>Save</button>
+    </form>
+
+</section>

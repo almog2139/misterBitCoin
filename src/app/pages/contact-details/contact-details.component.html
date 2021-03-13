@@ -1,0 +1,11 @@
+<div class="contact-details">
+    <img  [routerLink]="['/contact']" class="icon-back" src="../../../assets/icons/back.png" />
+    <img  class="icon" src="../../../assets/icons/edit.png" (click)="router.navigate(['edit', contact._id])" />
+    <img class="imgContact" src="https://robohash.org/{{contact.name}}?set=set5" />
+    <p>Name:  <span>{{contact.name}}</span></p>
+    <p>Email:<fa-icon [icon]="faEnvelope" [style]="{'color':'#8BB7F0'}"></fa-icon><span>{{contact.email}}</span></p>
+    <p>Phone:<fa-icon [icon]="faPhone" [style]="{'color':'#8BB7F0'}"></fa-icon><span>{{contact.phone}}</span></p>
+    <transfer-fund [contact]="contact" *ngIf="user?.coins" (onTransferFunds)="getContactMoves()" ></transfer-fund>
+    <move-list [title]="title" [movesList]="movesList"></move-list>
+   
+</div>

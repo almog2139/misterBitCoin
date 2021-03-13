@@ -1,0 +1,11 @@
+<div *ngIf="isShowTransfer" class="transfer-fund">
+    {{msg}}
+    <span *ngIf="coinsLeft">Left {{coinsLeft}} Coins</span>
+    <h3>Transfer coins to {{contact.name}}</h3>
+    <div>
+        <p>Amount:</p>
+        <input type="text" [(ngModel)]="amountCoins" />
+        <button (click)="onTransfer()">Transfer</button>
+    </div>
+
+</div>

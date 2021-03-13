@@ -1,0 +1,21 @@
+.contact-preview{
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #1d1d1f;
+    width: 30vw;
+    margin: auto;
+    margin-top: 10px;
+    height: 55px;
+    font-family: sans-serif;
+    z-index: 4;
+    box-shadow: 0 8px 32px 0 rgb(248 248 250 / 37%);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    img{
+        border-radius: 50%;
+        width: 50px;
+        object-fit: cover;
+    }
+}

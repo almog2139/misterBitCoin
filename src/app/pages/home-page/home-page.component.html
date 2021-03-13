@@ -1,0 +1,7 @@
+<div *ngIf="user && rate" class="home-page">
+    <h1>Hello {{user.name}}</h1>
+ 
+    <span class="coins"><img class="icon" src="../../../assets/icons/coins.png" />Coins:{{user.coins}}</span>
+    <span><img class="icon" src="../../../assets/icons/bitcoin.png" />BTC:{{rate|json}}</span>
+    <move-list [title]="title" [movesList]="movesList"></move-list>
+</div>

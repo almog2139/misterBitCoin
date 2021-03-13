@@ -1,0 +1,10 @@
+<div class="move-list">
+    <p *ngIf="movesList?.length">{{title}}</p>
+    <li *ngFor="let move of movesList">
+        <div class="move-card">
+            <p>At :{{move.at|date: "d/MM/yy, h:mm a" }}</p>
+            <p>To Cotact: {{move.to}}</p>
+            <p>Amout: {{move.amount}} coins</p>
+        </div>
+      </li>
+</div>

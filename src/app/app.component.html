@@ -1,0 +1,5 @@
+
+<header  *ngIf="isShowPage"></header>
+<sign-up-page *ngIf="!isShowPage" (onShowPage)="isShowPage=$event" ></sign-up-page>
+<router-outlet *ngIf="isShowPage" ></router-outlet> 
+

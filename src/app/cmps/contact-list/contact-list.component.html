@@ -1,0 +1,5 @@
+<div class="contact-list">
+    <contact-preview *ngFor="let contact of contacts" [contact]="contact"></contact-preview>
+    <img src="../../../assets/icons/plus.png"  class="plus"  (click)="toggleOpenEdit()" />
+
+</div>

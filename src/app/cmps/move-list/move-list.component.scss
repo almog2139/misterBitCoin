@@ -1,0 +1,22 @@
+.move-list{
+    width: 80%;
+    margin: auto;
+    border-radius: 12px;
+    .move-card{
+        background: rgba( 244, 244, 244, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba(248, 248, 250, 0.37);
+        backdrop-filter: blur( 5.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    li{
+        list-style-type: none;
+    }
+    p{
+        color: grey;
+    }
+  
+}
